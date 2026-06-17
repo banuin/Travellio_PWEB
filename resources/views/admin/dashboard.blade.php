@@ -5,8 +5,8 @@
     {{-- Header --}}
     <div class="flex justify-between items-end mb-8">
         <div>
-            <h1 class="text-3xl font-bold text-slate-900 flex items-center gap-2">Welcome back, {{ auth()->user()->name ?? 'Admin' }} 👋</h1>
-            <p class="text-slate-500 mt-1 text-sm">Here's what's happening with VoyageEase today.</p>
+            <h1 class="text-3xl font-bold text-slate-900 flex items-center gap-2">Selamat Datang Kembali, {{ auth()->user()->name ?? 'Admin' }} 👋</h1>
+            <p class="text-slate-500 mt-1 text-sm">Ini yang sedang terjadi di Travellio hari ini.</p>
         </div>
         <div class="text-sm text-slate-500">
             <span>Admin</span> <i class="fas fa-chevron-right text-xs mx-2"></i> <span class="font-bold text-slate-800">Dashboard</span>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Account - VoyageEase</title>
+    <title>Buat Akun - Travellio</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -15,10 +15,10 @@
         {{-- Sisi Kiri: Teks & Gambar --}}
         <div class="hidden md:block">
             <h1 class="text-4xl lg:text-5xl font-extrabold text-blue-700 leading-tight mb-4">
-                Start your next <br> adventure today.
+                Jelajahi Dunia <br> dengan Mudah.
             </h1>
             <p class="text-slate-600 text-lg mb-8 max-w-md">
-                Join VoyageEase to unlock exclusive travel packages, personalized itineraries, and seamless booking experiences.
+                Ikuti Travellio untuk membuka paket perjalanan eksklusif, rencana perjalanan yang dipersonalisasi, dan pengalaman pemesanan yang mulus.
             </p>
             
             <div class="relative rounded-2xl overflow-hidden shadow-2xl">
@@ -30,7 +30,7 @@
                         <i class="fas fa-shield-check"></i>
                     </div>
                     <div>
-                        <h4 class="font-bold text-slate-900 text-sm">Trusted by 10k+ Travelers</h4>
+                        <h4 class="font-bold text-slate-900 text-sm">Dipercaya oleh 10k+ Travelers</h4>
                         <p class="text-xs text-slate-500">Secure & verified bookings</p>
                     </div>
                 </div>
@@ -39,8 +39,8 @@
 
         {{-- Sisi Kanan: Form --}}
         <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-xl w-full max-w-md mx-auto border border-slate-100">
-            <h2 class="text-3xl font-bold text-slate-900 mb-2">Create Account</h2>
-            <p class="text-slate-500 text-sm mb-8">Enter your details to register with VoyageEase</p>
+            <h2 class="text-3xl font-bold text-slate-900 mb-2">Buat Akun</h2>
+            <p class="text-slate-500 text-sm mb-8">Masukkan detail Anda untuk mendaftar dengan Travellio</p>
 
             {{-- ACTION DIARAHKAN KE RUTE register.proses --}}
             <form action="{{ route('register.proses') }}" method="POST" class="space-y-5">
@@ -48,7 +48,7 @@
 
                 {{-- Input Name --}}
                 <div>
-                    <label class="block text-xs font-semibold text-slate-600 mb-1.5">Full Name</label>
+                    <label class="block text-xs font-semibold text-slate-600 mb-1.5">Nama Lengkap</label>
                     <div class="relative">
                         <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400"><i class="fas fa-user"></i></span>
                         <input type="text" name="name" value="{{ old('name') }}" required placeholder="Umar" 
@@ -59,7 +59,7 @@
 
                 {{-- Input Email --}}
                 <div>
-                    <label class="block text-xs font-semibold text-slate-600 mb-1.5">Email Address</label>
+                    <label class="block text-xs font-semibold text-slate-600 mb-1.5">Alamat Email</label>
                     <div class="relative">
                         <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400"><i class="fas fa-envelope"></i></span>
                         <input type="email" name="email" value="{{ old('email') }}" required placeholder="umar@mail.com" 
@@ -70,7 +70,7 @@
 
                 {{-- Input Phone --}}
                 <div>
-                    <label class="block text-xs font-semibold text-slate-600 mb-1.5">Phone Number</label>
+                    <label class="block text-xs font-semibold text-slate-600 mb-1.5">Nomor Telepon</label>
                     <div class="relative">
                         <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400"><i class="fas fa-phone"></i></span>
                         <input type="tel" name="phone" value="{{ old('phone') }}" placeholder="+1 (555) 000-0000" 
@@ -90,7 +90,7 @@
                         </div>
                     </div>
                     <div>
-                        <label class="block text-xs font-semibold text-slate-600 mb-1.5">Confirm Password</label>
+                        <label class="block text-xs font-semibold text-slate-600 mb-1.5">Konfirmasi Password</label>
                         <div class="relative">
                             <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400"><i class="fas fa-history"></i></span>
                             {{-- WAJIB bernama password_confirmation --}}
@@ -105,14 +105,14 @@
                 <div class="flex items-start gap-2 pt-2">
                     <input type="checkbox" name="terms" id="terms" required class="mt-1 w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-blue-500 cursor-pointer">
                     <label for="terms" class="text-xs text-slate-600 cursor-pointer">
-                        I agree to the <a href="#" class="text-blue-600 hover:underline">Terms of Service</a> and <a href="#" class="text-blue-600 hover:underline">Privacy Policy</a>.
+                        Saya setuju dengan <a href="#" class="text-blue-600 hover:underline">Syarat Layanan</a> dan <a href="#" class="text-blue-600 hover:underline">Kebijakan Privasi</a>.
                     </label>
                 </div>
                 @error('terms') <p class="text-red-500 text-xs">{{ $message }}</p> @enderror
 
                 {{-- Submit Button --}}
                 <button type="submit" class="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-md">
-                    Create Account <i class="fas fa-arrow-right"></i>
+                    Buat Akun <i class="fas fa-arrow-right"></i>
                 </button>
             </form>
 
@@ -123,7 +123,7 @@
             </div>
 
             <p class="text-center text-sm text-slate-600">
-                Already have an account? <a href="{{ route('login') }}" class="text-blue-700 font-bold hover:underline">Sign In</a>
+                Sudah punya akun? <a href="{{ route('login') }}" class="text-blue-700 font-bold hover:underline">Masuk</a>
             </p>
         </div>
     </div>

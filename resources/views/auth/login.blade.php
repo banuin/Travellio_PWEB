@@ -17,10 +17,10 @@
         
         <div class="absolute bottom-0 left-0 p-12 w-full">
             <h1 class="text-4xl xl:text-5xl font-bold text-white leading-tight mb-4">
-                Explore the World <br> with Ease.
+                Jelajahi Dunia <br> dengan Mudah.
             </h1>
             <p class="text-blue-50 text-lg max-w-md">
-                Join thousands of travelers who trust VoyageEase for their seamless journeys and unforgettable memories.
+                Ikuti Travellio untuk membuka paket perjalanan eksklusif, rencana perjalanan yang dipersonalisasi, dan pengalaman pemesanan yang mulus.
             </p>
         </div>
     </div>
@@ -29,8 +29,8 @@
     <div class="w-full lg:w-1/2 flex items-center justify-center p-8 sm:p-12">
         <div class="max-w-md w-full">
             
-            <h2 class="text-3xl font-bold text-slate-900 mb-2">Welcome Back</h2>
-            <p class="text-slate-500 mb-8 text-sm">Please enter your details to access your account.</p>
+            <h2 class="text-3xl font-bold text-slate-900 mb-2">Selamat Datang Kembali</h2>
+            <p class="text-slate-500 mb-8 text-sm">Silakan masukkan detail Anda untuk mengakses akun Anda.</p>
 
             {{-- Menampilkan Pesan Error (misal: password salah) --}}
             @if($errors->any())
@@ -54,7 +54,7 @@
                 
                 {{-- Input Email --}}
                 <div>
-                    <label class="block text-xs font-semibold text-slate-700 mb-1.5">Email Address</label>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1.5">Alamat Email</label>
                     {{-- Wajib ada name="email" --}}
                     <input type="email" name="email" value="{{ old('email') }}" required placeholder="name@company.com" 
                         class="w-full px-4 py-3 border @error('email') border-red-500 @else border-slate-300 @enderror rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-blue-600 outline-none transition-all text-sm">
@@ -76,9 +76,9 @@
                 <div class="flex items-center justify-between pt-1">
                     <div class="flex items-center gap-2">
                         <input type="checkbox" name="remember" id="remember" class="w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-blue-500 cursor-pointer">
-                        <label for="remember" class="text-sm text-slate-600 cursor-pointer">Remember me</label>
+                        <label for="remember" class="text-sm text-slate-600 cursor-pointer">Ingat aku</label>
                     </div>
-                    <a href="#" class="text-sm text-blue-700 font-semibold hover:underline">Forgot password?</a>
+                    <a href="#" class="text-sm text-blue-700 font-semibold hover:underline">Lupa password?</a>
                 </div>
 
                 <button type="submit" class="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-4 rounded-lg transition-colors mt-4 shadow-md flex justify-center items-center gap-2">
@@ -87,7 +87,7 @@
             </form>
 
             <p class="text-center text-sm text-slate-600 mt-8">
-                Don't have an account? <a href="{{ route('register') }}" class="text-blue-700 font-bold hover:underline">Register for free</a>
+                Belum punya akun? <a href="{{ route('register') }}" class="text-blue-700 font-bold hover:underline">Daftar secara gratis</a>
             </p>
 
         </div>
